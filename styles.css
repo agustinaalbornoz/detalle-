@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Display&display=swap');
 
 
 /* 1. VARIABLES DE DISEÑO */
@@ -9,7 +9,7 @@
   --light-color: #f8f9fa;
   --dark-color: #0f2925;
   --font-family-base: "Fira Code", monospace;
-  --background-color: #f8f9fa;
+  --background-color: #fffef8;
 
 }
 
@@ -36,6 +36,8 @@ body {
 }
 
 .navbar-brand {
+  font-family: "Libre Caslon Display", serif;
+  
   font-weight: 600;
   font-size: 1.7rem;
   color: #fff;
@@ -46,13 +48,13 @@ body {
   font-weight: 500;
   margin-left: 20px;
   transition: color 0.3s;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   
 }
 
 .nav-link active{
    color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   
   
 }
@@ -79,6 +81,7 @@ h1, h2, h3, h4, h5 {
   color: #0f2925;
   font-weight: 600;
   line-height: 1.2;
+  font-size: 20px;
 }
 
 .h8 {
@@ -86,20 +89,28 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
   line-height: 1.2;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   
 }
 
 .h7 {
+  font-family: "Lato", sans-serif;
   color: #0f2925;
   font-weight: 500;
   line-height: 1.8;
+}
+
+.h5{
+
+  font-size: 50px;
+  
 }
 
 .h51 {
   color: #0f2925;
   font-weight: 800;
   line-height: 1.2;
+  background-color: #f9b4b4;
 }
 
 .h6{
@@ -120,7 +131,7 @@ h1 {
   font-size:200px;
   font-size-adjust: ex-height;
   margin-bottom: 20px;
-  color: var(--dark-color);
+  
 }
 
 p {
@@ -134,15 +145,24 @@ p {
 }
 
 .bghero{
-  background: url("imagenes/fondo%20hero.png");
+  background: url("imagenes/hero2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 
-.btn btn-dark{
+.bghero1{
+  background: url("imagenes/fondo%20hero%20detalle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.btn btn-dark:hover{
+  color: #0f2925;
   font-size: 20px;
   margin-left: 50px;
+  
 }
 
 /* Botones */
@@ -150,12 +170,16 @@ p {
   border-radius: 28px;
   padding: 10px 30px;
   font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  color: #0f2925;
+  
   background-color: #f8c2c2;
   
 }
 
-
+.accordion-button,accordion-body,accordion-collapse,collapse show,collapsefour{
+  font-family: "Lato", sans-serif;
+  
+}
 .cuadrado1{
   color: #0f2925;
 }
@@ -168,8 +192,8 @@ p {
 
 
 .btn-outline-dark {
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  border: #0f2925;
+  color: #0f2925;
 }
 
 
@@ -185,7 +209,7 @@ p {
 
 /*suscripcion*/
 .fondo3{
-  background-image: url("imagenes/opcion%203%20suscripsion.png");
+  background-image: url(imagenes/fondo%20hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -282,7 +306,7 @@ section h2::after {
 
 /* 7. TESTIMONIOS */
 .blockquote {
-  background-color: var(--light-color);
+  background-color: #0f2925;
   border-left: 4px solid var(--primary-color);
   padding: 20px;
   border-radius: 5px;
@@ -295,7 +319,7 @@ form .form-control {
 }
 
 form button.btn-primary {
-  background-color: var(--primary-color);
+  background-color: #f8c2c2;
   border: none;
   width: 100%;
   border-radius: 50px;
@@ -304,14 +328,14 @@ form button.btn-primary {
 
 /* 9. FOOTER */
 footer {
-  background-color: var(--dark-color);
+  background-color: #0f2925;
   color: #ffffff;
   font-size: 0.9rem;
 }
 
 /* 10. IMÁGENES */
 img.rounded-circle {
-  border: 5px solid var(--light-color);
+  border: ;
 }
 
 /* 11. GALERÍA */
@@ -321,6 +345,10 @@ img.rounded-circle {
 
 .descuento{
 
+}
+
+.suscripcion{
+  background-color: #0f2925;
 }
 
 /* ============================== */
@@ -343,7 +371,7 @@ img.rounded-circle {
 }
 
 .h2-custom {
-  font-size: 2.5rem;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.3;
   color: var(--dark-color);
@@ -354,10 +382,16 @@ img.rounded-circle {
 }
 
 .h2-custom1 {
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.3;
   color: #fffdf3;
+}
+
+.sub{
+  font-size: 20px;
+  font-weight: 500;
+  
 }
 
 
@@ -388,39 +422,59 @@ img.rounded-circle {
 .p-custom {
   margin: 50px;
   margin-top: 10px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-weight: 900px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #0f2925;
+  line-height: 1.6;
+}
+
+.p-custom1 {
+  margin: 50px;
+  margin-top: 10px;
+  font-weight: 600px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
   color: #fffdf3;
   line-height: 1.6;
 }
 
 .p-custom2{
-  font-family: "Open Sans", sans-serif;
+  font-family:"Lato", sans-serif;
    font-size: 1rem;
   color: #0f2925;
   line-height: 1.6;
 }
 
 .p-custom3{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
    font-size: 1rem;
   color: #ffffff;
   line-height: 1.6;
 }
 
+.p-custom4 {
+  margin: 50px;
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #0f2925;
+  line-height: 1.6;
+}
+
 .lead-custom {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--secondary-color);
 }
 
 list-unstyled{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .#{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* FONDOS E IMÁGENES */
@@ -453,6 +507,16 @@ list-unstyled{
 .cardequipo{
   background-color: #f8c2c2;
 }
+
+.fondomarcas{
+  background-color: #f8c2c2;
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
+}
+
 
 
 /* TEXTOS ADICIONALES */
@@ -500,7 +564,7 @@ list-unstyled{
 }
 
 .blockquote{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   
 }
 
@@ -509,12 +573,19 @@ list-unstyled{
   background-color: #f8c2c2;
 }
 
-.card-body,card-text{
-  
+.card-body{
   color:#0f2925;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   
 }
+
+.btn:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  cursor: default !important;
+  box-shadow: none !important;
+}
+
 /* ============================== */
 /* MEDIA QUERIES */
 /* ============================== */
@@ -545,5 +616,9 @@ list-unstyled{
     column-count: 1;
   }
 }
-
-col-
+.btn:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  cursor: default !important;
+  box-shadow: none !important;
+}
